@@ -2,7 +2,6 @@ package world.bentobox.bentobox.database.sql.postgresql;
 
 import world.bentobox.bentobox.BentoBox;
 import world.bentobox.bentobox.database.DatabaseConnector;
-import world.bentobox.bentobox.database.sql.SQLConfiguration;
 import world.bentobox.bentobox.database.sql.SQLDatabaseHandler;
 
 /**
@@ -23,7 +22,7 @@ public class PostgreSQLDatabaseHandler<T> extends SQLDatabaseHandler<T> {
      * @param databaseConnector Contains the settings to create a connection to the database
      */
     PostgreSQLDatabaseHandler(BentoBox plugin, Class<T> type, DatabaseConnector databaseConnector) {
-        super(plugin, type, databaseConnector, new SQLConfiguration(type.getCanonicalName()));
+        super(plugin, type, databaseConnector, new PostgreSQLConfiguration(type.getCanonicalName()));
     }
 
 }
