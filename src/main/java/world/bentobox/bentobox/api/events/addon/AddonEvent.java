@@ -8,6 +8,8 @@ import org.bukkit.Bukkit;
 import world.bentobox.bentobox.api.addons.Addon;
 
 public class AddonEvent {
+    
+    public AddonEvent(){}
 
 
     public enum Reason {
